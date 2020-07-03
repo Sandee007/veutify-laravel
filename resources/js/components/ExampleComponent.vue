@@ -11,6 +11,9 @@
                 </div>
             </div>
         </div>
+        <v-app>
+            <v-btn color="blue" >  fuck</v-btn>
+        </v-app>
     </div>
 </template>
 
