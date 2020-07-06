@@ -7,26 +7,29 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Canty International') }}</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div id="app">
+        
+
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Canty International') }}
+                    {{ config('app.name', 'Laravel') }}
                 </a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -55,17 +58,17 @@
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
-{{--                                <div class="dropdown-menu " aria-labelledby="navbarDropdown">--}}
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        Logout
+                                        {{ __('Logout') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
-{{--                                </div>--}}
+                                </div>
                             </li>
                         @endguest
                     </ul>
@@ -73,8 +76,21 @@
             </div>
         </nav>
 
-        <main class="py-4">
-            @yield('content')
+        <main class="py-4 ">
+            @guest 
+                @yield('content')
+            @else 
+            <div class="row ">
+                <div class="col">
+                    <div class="sidebar" id="sidebar" >
+                        <example-component></example-component>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    @yield('content')
+                </div>
+            </div>
+            @endguest
         </main>
     </div>
 </body>
