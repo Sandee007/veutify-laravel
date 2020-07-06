@@ -1960,23 +1960,285 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      drawer: false,
+      drawer: true,
+      permanent: true,
       background: true,
-      dashboardItems: [{
-        text: 'Dashboard',
-        icon: 'mdi-view-dashboard',
-        route: '/'
+      dashboardItems: [// {text: 'Dashboard', icon: 'add', route: '/'},
+        // {text: 'My Projects', icon: 'ac_unit', route: '/projects'},
+        // {text: 'Team Members', icon: 'account_balance', route: '/team'},
+      ],
+      items: [{
+        action: 'house',
+        title: 'Home Branch',
+        active: true,
+        items: [// { title: 'List Item' },
+        ]
       }, {
-        text: 'My Projects',
-        icon: 'mdi-folder',
-        route: '/projects'
+        action: 'person',
+        title: 'Borrowers',
+        // active: true,
+        items: [{
+          title: 'View Borrowers'
+        }, {
+          title: 'Add Borrowers'
+        }, {
+          title: 'View Borrower Groups'
+        }, {
+          title: 'Add Borrowers Groups'
+        }, {
+          title: 'Send SMS to All Borrowers'
+        }, {
+          title: 'Send Email to All Borrowers'
+        }, {
+          title: 'Invite Borrowers'
+        }]
       }, {
-        text: 'Team Members',
-        icon: 'mdi-account-group',
-        route: '/team'
+        action: 'local_atm',
+        title: 'Loans',
+        items: [{
+          title: 'View All Loans'
+        }, {
+          title: 'Add Loan'
+        }, {
+          title: 'Due Loans'
+        }, {
+          title: 'Missed Repayments'
+        }, {
+          title: 'Loans in Arrears'
+        }, {
+          title: 'No Repayments'
+        }, {
+          title: 'Past Maturity Date'
+        }, {
+          title: 'Principal Outstanding'
+        }, {
+          title: '1 Month Late Loans'
+        }, {
+          title: '3 Months Late Loans'
+        }, {
+          title: 'Loan Calculator'
+        }, {
+          title: 'Guarantors'
+        }, {
+          title: 'Loan Comments'
+        }, {
+          title: 'Approve Loans'
+        }]
+      }, {
+        action: 'attach_money',
+        title: 'Repayments',
+        items: [{
+          title: 'View Repayments'
+        }, {
+          title: 'Add Bulk Repayments'
+        }, {
+          title: 'Upload Repayments - CSV file'
+        }, {
+          title: 'Repayments Charts'
+        }, {
+          title: 'Approve Repayments'
+        }]
+      }, {
+        action: 'toc',
+        title: 'Collateral Register',
+        items: [// { title: 'List Item' },
+        ]
+      }, {
+        action: 'today',
+        title: 'Calendar',
+        items: [// { title: 'List Item' },
+        ]
+      }, {
+        action: 'receipt_long',
+        title: 'Collection Sheets',
+        items: [{
+          title: 'Daily Collection Sheet'
+        }, {
+          title: 'Missed Repayments Sheet'
+        }, {
+          title: 'Past Maturity Date Loans'
+        }, {
+          title: 'Send SMS'
+        }, {
+          title: 'Send Email'
+        }]
+      }, {
+        action: 'account_tree',
+        title: 'Saving Transactions',
+        items: [{
+          title: 'View Savings Transactions '
+        }, {
+          title: 'Add Bulk Transactions'
+        }, {
+          title: 'Upload Transactions - CSV file'
+        }, {
+          title: 'Staff Transactions Report'
+        }, {
+          title: 'Approve Transactions'
+        }]
+      }, {
+        action: 'person_add',
+        title: 'Investors',
+        items: [{
+          title: 'View Investors'
+        }, {
+          title: 'Add Investor'
+        }, {
+          title: 'Send SMS to All Investors'
+        }, {
+          title: 'Send Email to All Investors'
+        }, {
+          title: 'Invite Investors'
+        }]
+      }, {
+        action: 'contacts',
+        title: 'Investor Accounts',
+        items: [{
+          title: 'View All Investor Accounts'
+        }, {
+          title: 'Add Investor Account'
+        }, {
+          title: 'View All Loan Investments'
+        }, {
+          title: 'View Investor Transactions'
+        }, {
+          title: 'Approve Loan Investments'
+        }]
+      }, {
+        action: 'gavel',
+        title: 'E-Signatures',
+        items: [// { title: 'List Item' },
+        ]
+      }, {
+        action: 'payments',
+        title: 'Payroll',
+        items: [{
+          title: 'View Payroll'
+        }, {
+          title: 'Add payroll'
+        }, {
+          title: 'Payroll Report'
+        }]
+      }, {
+        action: 'redo',
+        title: 'Expenses',
+        items: [{
+          title: 'View Expenses'
+        }, {
+          title: 'Add Expense'
+        }]
+      }, {
+        action: 'add',
+        title: 'Other Income',
+        items: [{
+          title: 'View Other Income'
+        }, {
+          title: 'Add Other Income'
+        }]
+      }, {
+        action: 'business_center',
+        title: 'Asset Management',
+        items: [{
+          title: 'View Asset Management'
+        }, {
+          title: 'Add Asset Management'
+        }]
+      }, {
+        action: 'insert_chart',
+        title: 'Reports',
+        items: [{
+          title: 'Borrowers Report'
+        }, {
+          title: 'Loan Report'
+        }, {
+          title: 'Loan Arrears Aging Report'
+        }, {
+          title: 'Collections Report'
+        }, {
+          title: 'Collector Report(Staff)'
+        }, {
+          title: 'Deferred Income'
+        }, {
+          title: 'Deferred Income Monthly'
+        }, {
+          title: 'Disbursement Report'
+        }, {
+          title: 'Fees Report'
+        }, {
+          title: 'Loan Officer Report'
+        }, {
+          title: 'Loan Products Report'
+        }, {
+          title: 'MFRS Rations'
+        }, {
+          title: 'Monthly Report'
+        }, {
+          title: 'Outstanding Report'
+        }, {
+          title: 'Portfolio At Risk (PAR)'
+        }, {
+          title: 'At a Glance Report'
+        }, {
+          title: 'All Entries'
+        }]
+      }, {
+        action: 'menu_book',
+        title: 'Accounting',
+        items: [{
+          title: 'Cash flow Accumulated'
+        }, {
+          title: 'Cash Flow Monthly'
+        }, {
+          title: 'Cash Flow Projection'
+        }, {
+          title: 'Profit / Loss'
+        }, {
+          title: 'Balance Sheet'
+        }, {
+          title: 'Accounting Integration'
+        }]
       }]
     };
   },
@@ -39934,50 +40196,19 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
+    "v-app",
     [
-      _c(
-        "v-app-bar",
-        {
-          attrs: {
-            app: "",
-            color: "blue",
-            "collapse-on-scroll": "",
-            dark: "",
-            src: _vm.bg
-          }
-        },
-        [
-          _c("v-app-bar-nav-icon", {
-            on: {
-              click: function($event) {
-                _vm.drawer = !_vm.drawer
-              }
-            }
-          }),
-          _vm._v(" "),
-          _c("v-toolbar-title", [_c("h1", [_vm._v("Title")])]),
-          _vm._v(" "),
-          _c("v-spacer"),
-          _vm._v(" "),
-          _c(
-            "v-btn",
-            { attrs: { rounded: "", dark: "", text: "" } },
-            [
-              _vm._v(" Sign out\n      "),
-              _c("v-icon", { attrs: { right: "" } }, [_vm._v(" exit-to-app ")])
-            ],
-            1
-          )
-        ],
-        1
-      ),
-      _vm._v(" "),
       _c(
         "v-navigation-drawer",
         {
           staticClass: "blue",
-          attrs: { app: "", src: _vm.bg },
+          attrs: {
+            permanent: _vm.permanent,
+            src: "bg",
+            color: "orange",
+            dark: "",
+            width: "380px"
+          },
           model: {
             value: _vm.drawer,
             callback: function($$v) {
@@ -39989,7 +40220,7 @@ var render = function() {
         [
           _c(
             "v-list",
-            { attrs: { rounded: "" } },
+            { attrs: { tile: "" } },
             _vm._l(_vm.dashboardItems, function(item, index) {
               return _c(
                 "v-list-item",
@@ -40003,27 +40234,107 @@ var render = function() {
                   }
                 },
                 [
-                  _c(
-                    "v-list-item-icon",
-                    [
-                      _c("v-icon", { staticClass: "white--text" }, [
-                        _vm._v(_vm._s(item.icon))
-                      ])
-                    ],
-                    1
-                  ),
+                  _c("v-list-item-icon", [
+                    _c("i", { staticClass: "material-icons white--text" }, [
+                      _vm._v(_vm._s(item.icon))
+                    ])
+                  ]),
                   _vm._v(" "),
                   _c(
                     "v-list-item-content",
                     [
-                      _c("v-list-item-title", { staticClass: "white--text" }, [
-                        _vm._v(_vm._s(item.text))
-                      ])
+                      _c(
+                        "v-list-item-title",
+                        { staticClass: "white--text 8px" },
+                        [_vm._v(_vm._s(item.text))]
+                      )
                     ],
                     1
                   )
                 ],
                 1
+              )
+            }),
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-list",
+            { attrs: { rounded: "" } },
+            _vm._l(_vm.items, function(item) {
+              return _c(
+                "v-list-group",
+                {
+                  key: item.title,
+                  attrs: {
+                    ripple: "",
+                    "prepend-icon": item.action,
+                    "no-action": ""
+                  },
+                  scopedSlots: _vm._u(
+                    [
+                      {
+                        key: "activator",
+                        fn: function() {
+                          return [
+                            _c(
+                              "v-list-item-content",
+                              [
+                                _c(
+                                  "v-list-item-title",
+                                  { staticClass: "white--text" },
+                                  [_vm._v(_vm._s(item.title))]
+                                )
+                              ],
+                              1
+                            )
+                          ]
+                        },
+                        proxy: true
+                      }
+                    ],
+                    null,
+                    true
+                  ),
+                  model: {
+                    value: item.active,
+                    callback: function($$v) {
+                      _vm.$set(item, "active", $$v)
+                    },
+                    expression: "item.active"
+                  }
+                },
+                [
+                  _vm._v(" "),
+                  _vm._l(item.items, function(subItem) {
+                    return _c(
+                      "v-list-item",
+                      {
+                        key: subItem.title,
+                        on: { click: function($event) {} }
+                      },
+                      [
+                        _c(
+                          "v-list-item-icon",
+                          [_c("v-icon", [_vm._v("forward")])],
+                          1
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "v-list-item-content",
+                          [
+                            _c("v-list-item-title", {
+                              domProps: { textContent: _vm._s(subItem.title) }
+                            })
+                          ],
+                          1
+                        )
+                      ],
+                      1
+                    )
+                  })
+                ],
+                2
               )
             }),
             1
@@ -94902,7 +95213,7 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
 
 new Vue({
   vuetify: _plugins_vuetify__WEBPACK_IMPORTED_MODULE_0__["default"]
-}).$mount('#app');
+}).$mount('#sidebar');
 
 /***/ }),
 
@@ -94965,13 +95276,10 @@ __webpack_require__.r(__webpack_exports__);
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vuetify-loader/lib/runtime/installComponents.js */ "./node_modules/vuetify-loader/lib/runtime/installComponents.js");
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuetify/lib/components/VAppBar */ "./node_modules/vuetify/lib/components/VAppBar/index.js");
-/* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/index.js");
-/* harmony import */ var vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VIcon */ "./node_modules/vuetify/lib/components/VIcon/index.js");
-/* harmony import */ var vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VList */ "./node_modules/vuetify/lib/components/VList/index.js");
-/* harmony import */ var vuetify_lib_components_VNavigationDrawer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VNavigationDrawer */ "./node_modules/vuetify/lib/components/VNavigationDrawer/index.js");
-/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/index.js");
-/* harmony import */ var vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VToolbar */ "./node_modules/vuetify/lib/components/VToolbar/index.js");
+/* harmony import */ var vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuetify/lib/components/VApp */ "./node_modules/vuetify/lib/components/VApp/index.js");
+/* harmony import */ var vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VIcon */ "./node_modules/vuetify/lib/components/VIcon/index.js");
+/* harmony import */ var vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VList */ "./node_modules/vuetify/lib/components/VList/index.js");
+/* harmony import */ var vuetify_lib_components_VNavigationDrawer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VNavigationDrawer */ "./node_modules/vuetify/lib/components/VNavigationDrawer/index.js");
 
 
 
@@ -95001,10 +95309,7 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 
 
-
-
-
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VAppBar: vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_4__["VAppBar"],VAppBarNavIcon: vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_4__["VAppBarNavIcon"],VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_5__["VBtn"],VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_6__["VIcon"],VList: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VList"],VListItem: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItem"],VListItemContent: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItemContent"],VListItemIcon: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItemIcon"],VListItemTitle: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_7__["VListItemTitle"],VNavigationDrawer: vuetify_lib_components_VNavigationDrawer__WEBPACK_IMPORTED_MODULE_8__["VNavigationDrawer"],VSpacer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_9__["VSpacer"],VToolbarTitle: vuetify_lib_components_VToolbar__WEBPACK_IMPORTED_MODULE_10__["VToolbarTitle"]})
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VApp: vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_4__["VApp"],VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_5__["VIcon"],VList: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_6__["VList"],VListGroup: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_6__["VListGroup"],VListItem: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_6__["VListItem"],VListItemContent: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_6__["VListItemContent"],VListItemIcon: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_6__["VListItemIcon"],VListItemTitle: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_6__["VListItemTitle"],VNavigationDrawer: vuetify_lib_components_VNavigationDrawer__WEBPACK_IMPORTED_MODULE_7__["VNavigationDrawer"]})
 
 
 /* hot reload */

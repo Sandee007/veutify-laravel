@@ -37,4 +37,4 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 new Vue({
   vuetify,
-}).$mount('#app')
+}).$mount('#sidebar')
